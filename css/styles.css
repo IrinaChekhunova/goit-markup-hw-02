@@ -3,10 +3,13 @@
   --main-text-color: #434455;
   --accent-color: #4d5ae5;
   --logo-text-color: #f4f4fd;
+  --background-color-white: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: var(--background-color-white);
 }
 
 a {
@@ -20,20 +23,20 @@ ul {
 /*! -----------HEADER------------- */
 
 .header-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: var(--accent-color);
   text-transform: uppercase;
 }
 
-.header-logo span {
-  color: #4d5ae5;
+.header-logo-dark {
+  color: #2e2f42;
 }
-.header-logo:is(:hover, :focus) {
+.header-logo-dark:is(:hover, :focus) {
   color: #404bbf;
 }
 
@@ -54,6 +57,10 @@ ul {
 
 .header-menu:is(:hover, :focus) {
   color: #404bbf;
+}
+
+.header-soc {
+font-style: normal;
 }
 
 .header-soc-link {
@@ -79,6 +86,7 @@ ul {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -130,6 +138,7 @@ ul {
 
 .products-title {
   font-family: inherit;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -145,6 +154,7 @@ ul {
 }
 .team-title {
   font-family: inherit;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -181,21 +191,21 @@ ul {
 /* ---------------------footer-------------------- */
 
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--logo-text-color);
+  color: var(--accent-color;
   text-transform: uppercase;
 }
 
 .footer-logo:is(:hover, :focus) {
   color: #404bbf;
 }
-.footer-logo span {
-  color: var(--accent-color);
+.footer-logo-white {
+  color: #F4F4FD;
 }
 
 .footer-window {
@@ -213,6 +223,7 @@ ul {
 /* --------------Portfolio------------------ */
 
 .filter-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -225,6 +236,14 @@ ul {
 .filter-btn:is(:hover, :focus) {
   background: #404bbf;
   color: #ffffff;
+}
+
+
+.products-item {
+  list-style: none;
+}
+.project-img {
+  text-decoration: none;
 }
 
 .project-title {
