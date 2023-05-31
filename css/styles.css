@@ -4,6 +4,7 @@
   --accent-color: #4d5ae5;
   --logo-text-color: #f4f4fd;
   --background-color-white: #ffffff;
+  --paragraf-color: #f4f4fd;
 }
 
 body {
@@ -60,7 +61,7 @@ ul {
 }
 
 .header-soc {
-font-style: normal;
+  font-style: normal;
 }
 
 .header-soc-link {
@@ -98,8 +99,6 @@ font-style: normal;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -197,19 +196,18 @@ font-style: normal;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--accent-color;
+  color: var(--accent-color);
   text-transform: uppercase;
 }
 
-.footer-logo:is(:hover, :focus) {
+.footer-logo-white {
+  color: var(--logo-text-color);
+}
+.footer-logo-white:is(:hover, :focus) {
   color: #404bbf;
 }
-.footer-logo-white {
-  color: #F4F4FD;
-}
-
 .footer-window {
-  background: #2e2f42;
+  background: var(--title-color);
 }
 
 .footer-text {
@@ -217,7 +215,7 @@ font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--logo-text-color);
+  color: var(--paragraf-color);
 }
 
 /* --------------Portfolio------------------ */
@@ -230,16 +228,15 @@ font-style: normal;
   letter-spacing: 0.04em;
   color: var(--accent-color);
   cursor: pointer;
-  background: #f4f4fd;
+  background-color: var(--paragraf-color);
 }
 
 .filter-btn:is(:hover, :focus) {
-  background: #404bbf;
+  background-color: #404bbf;
   color: #ffffff;
 }
 
-
-.products-item {
+.products-list {
   list-style: none;
 }
 .project-img {
